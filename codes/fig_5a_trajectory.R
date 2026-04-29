@@ -212,7 +212,7 @@ loading_df <- loading_df %>%
 
 cat_colors <- c(
   "Richness"  = "#496C8D",
-  "Diversity" = "grey",
+  "Diversity" = "#C0C0C0",
   "PC1"       = "#669189",
   "Foodweb"   = "#D39139"
 )
@@ -312,7 +312,7 @@ annot_text <- paste0('F = ', round(f_value, 2),
                      '  P = ', ifelse(p_value < 0.001, '<0.001', round(p_value, 3)))
 
 segment_colors <- c(
-  '1st-2nd' = 'grey',
+  '1st-2nd' = '#C0C0C0',
   '2nd-3rd' = '#496C8D',
   '3rd-4th' = '#D39139',
   '2nd-4th' = '#669189',
