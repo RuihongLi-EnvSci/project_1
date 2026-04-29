@@ -1,9 +1,3 @@
-library(ggtern)
-library(reshape2)
-library(ade4)
-library(viridis)
-library(ggplot2)
-
 load("data/abundance_by_group.rdata")
 
 datasets_to_analyze <- c(
