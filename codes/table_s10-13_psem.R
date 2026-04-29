@@ -1,5 +1,3 @@
-library(piecewiseSEM)
-
 load("data/metrics.rdata")
 
 model_1 <- piecewiseSEM::psem(
