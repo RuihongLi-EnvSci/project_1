@@ -3,11 +3,17 @@ pre.packages <- c(
   'bipartite', 'purrr', 'Hmisc', 'piecewiseSEM','tidyverse','rstatix',
   'car','lme4','lmerTest','multilevelTools','extraoperators','JWileymisc',
   'effectsize','influence.ME','GGally','MuMIn','sjstats','labdsv','betapart',
-  'reshape2','ggtern','ggplot2', 'pairwiseAdonis', 'ecotraj','stringr', 
+  'reshape2','ggtern','ggplot2', 'ecotraj','stringr', 
   'smacof','ggrepel','adespatial','agricolae') 
+
+if (!require(pairwiseAdonis)) {
+  install.packages("devtools")
+  devtools::install_github("pmartinezarbizu/pairwiseAdonis/pairwiseAdonis")
+}
+library(pairwiseAdonis)
 
 installed <- installed.packages()[, "Package"] 
 
 install.packages(pre.packages[!pre.packages %in% installed], dependencies = TRUE) 
 
-lapply(pre.packages, library,character.only = TRUE) 
+lapply(pre.packages, library,character.only = TRUE)
