@@ -345,7 +345,7 @@ plot_point_style <- function(data_long,
     )
   
   species_simple_name <- gsub(suffix_to_remove, "", as.character(current_species))
-  output_file <- paste0("figures/fig_1c-d/", file_prefix, species_simple_name, ".png")
+  output_file <- paste0("figures/fig_1c-d_scatterplot/", file_prefix, species_simple_name, ".png")
   
   ggsave(
     filename = output_file,
