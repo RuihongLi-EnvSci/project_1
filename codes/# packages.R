@@ -6,14 +6,14 @@ pre.packages <- c(
   'reshape2','ggtern','ggplot2', 'ecotraj','stringr', 
   'smacof','ggrepel','adespatial','agricolae') 
 
-if (!require(pairwiseAdonis)) {
-  install.packages("devtools")
-  devtools::install_github("pmartinezarbizu/pairwiseAdonis/pairwiseAdonis")
-}
-library(pairwiseAdonis)
-
 installed <- installed.packages()[, "Package"] 
 
 install.packages(pre.packages[!pre.packages %in% installed], dependencies = TRUE) 
 
 lapply(pre.packages, library,character.only = TRUE)
+
+if (!require(pairwiseAdonis)) {
+  install.packages("devtools")
+  devtools::install_github("pmartinezarbizu/pairwiseAdonis/pairwiseAdonis")
+}
+library(pairwiseAdonis)
