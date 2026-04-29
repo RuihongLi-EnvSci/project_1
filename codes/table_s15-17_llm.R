@@ -1,8 +1,3 @@
-library(lme4)
-library(car)
-library(performance)
-library(lmerTest)  # 添加该包以使 summary() 输出包含 p 值
-
 load("data/metrics.rdata")
 
 run_lmer_models <- function(response_vars, data) {
