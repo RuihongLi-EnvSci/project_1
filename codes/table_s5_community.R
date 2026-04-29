@@ -1,8 +1,3 @@
-library(vegan)
-library(codyn)
-library(openxlsx)
-library(dplyr)
-
 load('data/abundance_by_group.rdata')
 
 all_groups <- list(
