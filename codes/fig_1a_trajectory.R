@@ -1,9 +1,3 @@
-library(vegan)
-library(ggplot2)
-library(dplyr)
-library(ecotraj)
-library(labdsv)
-
 load("data/abundance_by_group.rdata")
 
 multigroups <- rbind(
