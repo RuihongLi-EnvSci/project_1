@@ -167,7 +167,7 @@ p <- ggplot(coords, aes(x = dim1, y = dim2, color = as.factor(group))) +
   geom_hline(yintercept = 0, linetype = 'dashed')
 
 ggsave(
-  'figures/fig_5_trajectory/metrics_pcoa.png',
+  'figures/fig_5a_trajectory/metrics_pcoa.png',
   plot = p, width = 10, height = 8, dpi = 1000
 )
 
@@ -252,10 +252,10 @@ p_load <- ggplot(loading_df, aes(x = PC1, y = PC2, color = category)) +
     override.aes = list(shape = 15, size = 4, linetype = "blank")
   ))
 
-ggsave('figures/fig_5_trajectory/pcoa_loadings.png',
+ggsave('figures/fig_5a_trajectory/pcoa_loadings.png',
        plot = p_load, width = 10, height = 8, dpi = 1000)
 
-cat("PCA方差解释率:\n")
+cat("PCA R2 value:\n")
 cat("PC1:", var_explained[1], "%\n")
 cat("PC2:", var_explained[2], "%\n")
 
@@ -301,7 +301,7 @@ mean_values <- data_long %>%
 data_long_1 <- data_long[data_long$Segment %in% c("1st-2nd", "2nd-3rd", "3rd-4th"), ]
 
 anova_result <- aov(Length ~ Segment, data = data_long_1)
-cat("===== ANOVA 结果 =====\n")
+cat("===== ANOVA Results =====\n")
 print(summary(anova_result))
 cat("\n===== Tukey HSD =====\n")
 print(TukeyHSD(anova_result))
@@ -352,6 +352,6 @@ p_scatter <- ggplot(data_long, aes(x = Segment, y = Length, fill = Segment)) +
   )
 
 ggsave(
-  'figures/fig_5_trajectory/traj_distance.png',
+  'figures/fig_5a_trajectory/traj_distance.png',
   plot = p_scatter, width = 10, height = 8, dpi = 1000
 )
