@@ -1,9 +1,3 @@
-library(dplyr)
-library(tidyr)
-library(ggplot2)
-library(agricolae)
-library(grid)
-
 load("data/metrics.rdata")
 
 richness_variables <- c(
