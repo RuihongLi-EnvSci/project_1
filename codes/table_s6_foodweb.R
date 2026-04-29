@@ -1,10 +1,3 @@
-library(dplyr)
-library(purrr)
-library(magrittr)
-library(igraph)
-library(bipartite)
-library(openxlsx)
-
 rm(list = ls())
 
 load("data/abundance_by_time.rdata")
