@@ -1,7 +1,3 @@
-library(vegan)
-library(codyn)
-library(openxlsx)
-library(dplyr)
 set.seed(123)
 
 load('data/abundance_by_group.rdata')
