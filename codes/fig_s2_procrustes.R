@@ -89,7 +89,7 @@ perform_procrustes <- function(name1, name2, data1, data2) {
     )
   
   ggsave(
-    sprintf("figures/fig_s3_procrustes/%s-%s.png", name1, name2),
+    sprintf("figures/fig_s2_procrustes/%s-%s.png", name1, name2),
     plot = p,
     width = 11,
     height = 11,
