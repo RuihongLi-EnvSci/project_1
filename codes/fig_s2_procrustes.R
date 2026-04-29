@@ -1,6 +1,3 @@
-library(vegan)
-library(ggplot2)
-
 load("data/abundance_by_group.rdata")
 
 datasets_list <- list(
