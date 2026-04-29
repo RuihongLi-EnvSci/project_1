@@ -1,10 +1,3 @@
-library(vegan)
-library(ecotraj)
-library(ggplot2)
-library(ggrepel)
-library(dplyr)
-library(tidyr)
-
 load("data/metrics.rdata")
 
 # ========================
