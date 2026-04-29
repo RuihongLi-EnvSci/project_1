@@ -1,9 +1,3 @@
-library(readxl)
-library(dplyr)
-library(tidyr)
-library(ggplot2)
-library(agricolae)
-
 load("data/metrics.rdata")
 
 data_processed <- data_original %>%
