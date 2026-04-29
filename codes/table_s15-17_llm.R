@@ -17,7 +17,7 @@ run_lmer_models <- function(response_vars, data) {
     model <- lmer(as.formula(formula_str), data = data)
     
     cat('\n--- model summary ---\n')
-    model_summary <- summary(model)  # 现在会包含 p 值列
+    model_summary <- summary(model)
     print(model_summary)
     
     fixed_effects <- as.data.frame(model_summary$coefficients)
