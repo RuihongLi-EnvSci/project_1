@@ -167,7 +167,7 @@ p <- ggplot(coords, aes(x = dim1, y = dim2, color = as.factor(group))) +
   geom_hline(yintercept = 0, linetype = 'dashed')
 
 ggsave(
-  'figures/fig_5a_trajectory/metrics_pcoa.png',
+  'results/trajectory_multimetrics/metrics_pcoa.png',
   plot = p, width = 10, height = 8, dpi = 1000
 )
 
@@ -252,7 +252,7 @@ p_load <- ggplot(loading_df, aes(x = PC1, y = PC2, color = category)) +
     override.aes = list(shape = 15, size = 4, linetype = "blank")
   ))
 
-ggsave('figures/fig_5a_trajectory/pcoa_loadings.png',
+ggsave('results/trajectory_multimetrics/pcoa_loadings.png',
        plot = p_load, width = 10, height = 8, dpi = 1000)
 
 cat("PCA R2 value:\n")
@@ -352,6 +352,6 @@ p_scatter <- ggplot(data_long, aes(x = Segment, y = Length, fill = Segment)) +
   )
 
 ggsave(
-  'figures/fig_5a_trajectory/traj_distance.png',
+  'results/trajectory_multimetrics/traj_distance.png',
   plot = p_scatter, width = 10, height = 8, dpi = 1000
 )
