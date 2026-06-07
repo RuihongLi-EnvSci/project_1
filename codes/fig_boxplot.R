@@ -188,7 +188,7 @@ for (current_index in levels(data_long$index)) {
     )
   
   output_file <- paste0(
-    "figures/fig_3b_boxplot/",
+    "results/boxplot/",
     current_index,
     ".png"
   )
