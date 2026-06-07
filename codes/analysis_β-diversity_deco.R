@@ -111,7 +111,7 @@ analyze_beta_diversity <- function(dataset_name, data) {
     )
   
   ggsave(
-    paste0("figures/fig_1b_β diversity/jac_", dataset_name, ".png"),
+    paste0("results/β diversity deco/jac_", dataset_name, ".png"),
     p,
     width = 9,
     height = 9,
