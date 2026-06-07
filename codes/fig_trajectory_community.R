@@ -98,7 +98,7 @@ process_taxon <- function(taxon_name, output_name) {
     geom_vline(xintercept = 0, linetype = 'dashed') +
     geom_hline(yintercept = 0, linetype = 'dashed')
   
-  ggsave(paste0('figures/fig_1a_trajectory/', output_name), plot = p, width = 8, height = 8, dpi = 600)
+  ggsave(paste0('results/trajectory_community/', output_name), plot = p, width = 8, height = 8, dpi = 600)
   return(p)
 }
 
